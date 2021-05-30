@@ -1,0 +1,35 @@
+name: sp
+channels:
+- defaults
+- conda-forge
+dependencies:
+- python=3.8
+- pip
+- tqdm
+- ipython
+- jupyter
+- jupyter_contrib_nbextensions
+- nbconvert<6.0
+- mkl
+- numpy<1.21
+- numba
+- scipy<1.7
+- matplotlib
+- pandas<1.3
+- scikit-learn
+- seaborn
+- statsmodels<0.13
+- nbdime
+- flake8
+- flake8-docstrings
+- black
+- isort
+- git-annex
+- r-base
+- r-afex
+- pip:
+  - rpy2<3.5
+  - datalad
+  - pingouin<0.3.13
+  - mne<0.23
+  - mne_bids<0.8

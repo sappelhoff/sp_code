@@ -1,0 +1,9 @@
+In this directory we will collect the publication plots.
+
+Running the analysis notebooks will save CSV files in here.
+
+Running `../publication_plots.ipynb` will save PDF files in here.
+
+`fig1a.odg` can be used to export `fig1a.pdf`.
+
+`fig1.sh` can be used to stitch `fig1a.pdf` together with outputs from `publication_plots.ipynb` to obtain Figure 1.
