@@ -609,7 +609,9 @@ def evaluate_significance(
         else:
             raise ValueError('unknown `clusterstat` argument "{}"'.format(clusterstat))
 
-        sig_clusters = list(np.array(clusters_obs[effect])[is_significant])
+        sig_clusters = list(
+            np.array(clusters_obs[effect], dtype=object)[is_significant]
+        )
         clusters_obs_sig[effect] = sig_clusters
 
     return clustersig_threshs, clusters_obs_stats, clusters_obs_sig
@@ -849,8 +851,8 @@ if __name__ == "__main__":
 
             # also save the column order of the cluster distribution
             fname_distr_col_ord = f"{fname_base}_distr_column_order.txt"
-            with open(fname_distr_col_ord, 'w') as fout:
-                print('\n'.join(cluster_distr.keys()), file=fout)
+            with open(fname_distr_col_ord, "w") as fout:
+                print("\n".join(cluster_distr.keys()), file=fout)
 
             stop = time.time()
             print(f"time elapsed: {stop - start:.2f} seconds")
