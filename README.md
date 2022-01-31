@@ -27,7 +27,7 @@ available on GitHub, and is archived on Zenodo.
 
 ### Data
 
-The data is available on GIN (see "Download the data") below.
+The data is available on GIN (see "Download the data" below).
 
 - GIN: https://gin.g-node.org/sappelhoff/mpib_sp_eeg
 
