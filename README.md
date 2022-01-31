@@ -37,6 +37,10 @@ The analysis code in this repository is also archived on Zenodo.
 
 - Zenodo: https://doi.org/10.5281/zenodo.5929222
 
+## License
+
+The analysis code is made available under the MIT license, see the LICENSE file.
+
 ## Setup
 
 ### Install a Python environment
