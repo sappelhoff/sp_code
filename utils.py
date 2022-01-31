@@ -1544,6 +1544,19 @@ def smooth_eeg(eeg, len_ms, alpha=2.5):
     >>> def fwhm2sigma(fwhm):
     ...     return fwhm / np.sqrt(8 * np.log(2))
 
+    Here, `sigma` is the "std" passed to ``scipy.signal.windows.gaussian``.
+
+    Examples
+    --------
+    When smoothing with a window of 150ms and with the default alpha of 2.5,
+    we have:
+    >>> sigma = (150-1) / (2*2.5)
+    >>> fwhm = sigma * np.sqrt(8 * np.log(2))
+    >>> fwhm  # sometimes called fdhm when over time
+    70.17363734192229
+    >>> fwhm / 2  # half duration half maximum (hdhm)
+    35.086818670961144
+
     References
     ----------
     .. [1] https://stackoverflow.com/a/16167851/5201771
