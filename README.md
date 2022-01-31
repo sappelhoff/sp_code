@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/369565611.svg)](https://zenodo.org/badge/latestdoi/369565611)
+
 # Code for the `mpib_sp_eeg` dataset
 
 The code in this repository was used to analyze the data from the `mpib_sp_eeg` dataset
@@ -6,6 +8,34 @@ The code in this repository was used to analyze the data from the `mpib_sp_eeg` 
 Below, we describe how to setup the environment necessary to reproduce the results.
 
 Finally, there is a section describing each file contained in this repository.
+
+## Further information
+
+### Preprint
+
+A preprint is available on BioRxiv.
+
+- BioRxiv: https://doi.org/10.1101/2021.06.03.446960
+
+### Experiment code
+
+The code that was run to collect data from the human study participants is
+available on GitHub, and is archived on Zenodo.
+
+- GitHub: https://github.com/sappelhoff/sp_experiment/
+- Zenodo: https://doi.org/10.5281/zenodo.3354368
+
+### Data
+
+The data is available on GIN (see "Download the data") below.
+
+- GIN: https://gin.g-node.org/sappelhoff/mpib_sp_eeg
+
+### Analysis code
+
+The analysis code in this repository is also archived on Zenodo.
+
+- Zenodo: https://doi.org/10.5281/zenodo.5929222
 
 ## Setup
 
