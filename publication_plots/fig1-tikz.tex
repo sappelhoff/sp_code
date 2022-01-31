@@ -1,0 +1,55 @@
+\documentclass[a4paper, 10pt]{article}
+\usepackage{parskip}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[export]{adjustbox}
+\usepackage{tikz}
+\usepackage[left=30mm,top=30mm]{geometry}
+
+% Declare font, need to compile with XeTex
+\usepackage{fontspec}
+    \setmainfont{Liberation Sans}
+
+% Declare metadata
+\usepackage[xetex,
+            pdfauthor={Stefan Appelhoff},
+            pdftitle={Figure1},
+            pdfsubject={SP Experiment},
+            pdfkeywords={mpib}]{hyperref}
+
+% Command to place text on document
+\newcommand\PlaceText[3]{%
+\begin{tikzpicture}[remember picture,overlay]
+\node[outer sep=0pt,inner sep=0pt,anchor=south west]
+  at ([xshift=#1,yshift=-#2]current page.north west) {#3};
+\end{tikzpicture}%
+}
+
+\begin{document}
+% remove page number
+\pagestyle{empty}
+
+% add figures
+\colorbox{white}{\includegraphics[width=\textwidth, keepaspectratio]{fig1a-crop.pdf}}
+\\
+\\
+\colorbox{white}{\includegraphics[width=\textwidth, keepaspectratio]{fig1bcd-crop.pdf}}
+
+% place panel letter somewhere (trial and error ... will not be perfect)
+% Use one of the following sizes:
+%\tiny
+%\scriptsize
+%\footnotesize
+%\small
+%\normalsize
+%\large
+%\Large
+%\LARGE
+%\huge
+%\Huge
+
+\PlaceText{34mm}{28mm}{\normalsize\textbf{a}}
+%\PlaceText{34mm}{100mm}{\small\textbf{b}}
+
+
+\end{document}

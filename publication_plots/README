@@ -4,6 +4,12 @@ Running the analysis notebooks will save CSV files in here.
 
 Running `../publication_plots.ipynb` will save PDF files in here.
 
-`fig1a.odg` can be used to export `fig1a.pdf`.
+`fig1a.odg` can be used to export `fig1a.pdf` (via LibreOffice Draw).
 
-`fig1.sh` can be used to stitch `fig1a.pdf` together with outputs from `publication_plots.ipynb` to obtain Figure 1.
+The corresponding `fig1bcd.pdf` file will be produced when running `../publication_plots.ipynb`.
+
+PDFs should be cropped using the `pdfcrop` command line tool that is shipped via the TeX Live distribution (https://www.tug.org/texlive/).
+
+`fig1-tikz.tex` can be used to merge `fig1a-crop.pdf` and `fig1bcd-crop.pdf` into a single `fig1.pdf` file (via XeTex; most easily accessed via https://www.overleaf.com).
+
+`fig1-tikz_to_png.sh` can be used to convert `fig1.pdf` to PNG format.
