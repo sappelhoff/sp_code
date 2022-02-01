@@ -12,4 +12,4 @@ PDFs should be cropped using the `pdfcrop` command line tool that is shipped via
 
 `fig1-tikz.tex` can be used to merge `fig1a-crop.pdf` and `fig1bcd-crop.pdf` into a single `fig1.pdf` file (via XeTex; most easily accessed via https://www.overleaf.com).
 
-`fig1-tikz_to_png.sh` can be used to convert `fig1.pdf` to PNG format.
+`fig1-tikz_to_raster.sh` can be used to convert `fig1.pdf` to PNG and TIF format.

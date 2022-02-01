@@ -255,5 +255,5 @@ To find the results for the RSA (after running `run_rsa_cluster_plot.sh`), use t
 - `publication_plots/fig1a.odg`: A "LibreOffice Draw" file for panel a in Figure 1.
 - `publication_plots/fig1a.pdf`: A pdf export from the `publication_plots/fig1a.odg` file.
 - `publication_plots/fig1-tikz.tex`: A XeTex file to stitch together panel a, and the remaining panels for Figure 1.
-- `publication_plots/fig1-tikz_to_png.sh`: A shell script to convert Figure 1 PDF to PNG.
+- `publication_plots/fig1-tikz_to_raster.sh`: A shell script to convert Figure 1 PDF to PNG and TIF format.
 
