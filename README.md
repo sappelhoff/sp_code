@@ -208,6 +208,7 @@ To find the results for the RSA (after running `run_rsa_cluster_plot.sh`), use t
 ### "other" files
 
 - `.gitignore`: So that temporary files, caches, or log files are not committed to the version control history.
+- `.zenodo.json`: Metadata for the code archive on Zenodo.
 - `environment.yml`: For use with the `conda` package manager to set up a Python environment for running the code.
 - `simplepython.tpl`: A template file for `nbconvert` that is used to convert Jupyter Notebooks to Python scripts.
 - `ipynb2py.sh`: A convenience shell script (`bash`) that converts all notebooks of interest to Python scripts.
